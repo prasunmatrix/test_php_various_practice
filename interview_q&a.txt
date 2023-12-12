@@ -1,0 +1,55 @@
+Viacon Marketing & Technologies Private Limited
+-------------------------------------------------
+1.what is abstart class?
+2.what is the property of oops?
+3.what is friend class?
+4.How many type of inheritance?
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Aranax Technologies Pvt Ltd (date: 02/12/2023)
+------------------------------------------------
+post_table
+
+id,post_name,status
+
+post_like_table
+
+id,post_id (parent key post table),like(good=>1,bad=>2,average=>3)
+
+Ans. SELECT COUNT(pl.like_post),p.post_name from post_like_table as pl INNER JOIN post_table as p ON pl.post_id=p.id WHERE pl.like_post='1' GROUP BY pl.post_id;
+--------------------------------------------------------------------------------------------------------------------------------------
+
+student_table
+student_id,student_name,
+1          A
+2          B
+student_result_table
+id,student_id,subject,marks 
+1   1         Bengali, 80
+2   1         Englist  60
+3   2         Bengali  70
+4   2         Englist  50
+
+student_result_table
+id,student_id,bengali,engish 
+1   1         60      80
+2   2         50      60
+
+
+select SUM(marks),name from student_table as s INNER JOIN student_result_table as sr ON s.student_id=sr.id GROUP_BY sr.student_id;
+
+correct answer: select SUM(sr.marks),s.student_name from student_result_table as sr INNER JOIN student_table as s ON sr.student_id=s.student_id GROUP BY sr.student_id;
+
+------------------------------------------------------------------------------------------------------------------------------------
+Mass Software Solution (date:06/12/2023)
+-----------------------------------------
+1. Print: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
+2. $array = array[1, 6, 2, 23, 10, 15, 3, 2, 15, 7];
+Find duplocate.
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+
